@@ -27,8 +27,8 @@ public class SwaggerConfig {
     }
 
     private ApiInfo apiInfo() {
-        return new ApiInfo("My api",
-                "this a api",
+        return new ApiInfo("Api Car Store",
+                "this a api for car store",
                 "1.0",
                 "urn:tos",
                 ApiInfo.DEFAULT_CONTACT,
