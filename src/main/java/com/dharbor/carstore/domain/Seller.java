@@ -13,6 +13,7 @@ public class Seller {
     private String name;
     private  int age;
     private int ci;
+    private int num_cars_sold;
 
     public String getId() {
         return id;
@@ -44,5 +45,13 @@ public class Seller {
 
     public void setCi(int ci) {
         this.ci = ci;
+    }
+
+    public int getNum_cars_sold() {
+        return num_cars_sold;
+    }
+
+    public void setNum_cars_sold(int num_cars_sold) {
+        this.num_cars_sold = num_cars_sold;
     }
 }

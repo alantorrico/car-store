@@ -4,6 +4,7 @@ import org.springframework.data.annotation.Id;
 import org.springframework.data.mongodb.core.mapping.DBRef;
 import org.springframework.data.mongodb.core.mapping.Document;
 
+import java.time.LocalDate;
 import java.util.Date;
 
 /**
@@ -62,7 +63,7 @@ public class RegistryCarSold {
         return sold_date;
     }
 
-    public void setSold_date(Date sold_date) {
+    public void setSold_date(LocalDate sold_date) {
         this.sold_date = sold_date;
     }
 }

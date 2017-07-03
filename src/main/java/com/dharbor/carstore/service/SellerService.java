@@ -44,4 +44,14 @@ public class SellerService {
 
         return sellerRepository.save(seller);
     }
+
+    public void updateNumCarsSold(String id, int numCars){
+        Seller seller = sellerRepository.findOne(id);
+        if(numCars > 0){
+            int num_cars_sold = seller.getNum_cars_sold();
+            num_cars_sold += numCars;
+            seller.setNum_cars_sold(num_cars_sold);
+            sellerRepository.save(seller);
+        }
+    }
 }
